@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\devandroid\\Downloads\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj": {}
+    "C:\\Users\\devandroid\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj": {}
   },
   "projects": {
-    "C:\\Users\\devandroid\\Downloads\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj": {
+    "C:\\Users\\devandroid\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\devandroid\\Downloads\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj",
+        "projectUniqueName": "C:\\Users\\devandroid\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj",
         "projectName": "TurnosPeluqueria-EJ06",
-        "projectPath": "C:\\Users\\devandroid\\Downloads\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj",
+        "projectPath": "C:\\Users\\devandroid\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj",
         "packagesPath": "C:\\Users\\devandroid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\devandroid\\Downloads\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06\\obj\\",
+        "outputPath": "C:\\Users\\devandroid\\TurnosPeluqueria-EJ06\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

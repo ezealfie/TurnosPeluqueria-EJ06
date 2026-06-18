@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/hSj5kkKZKE=",
+  "dgSpecHash": "FYnlMSxsBDA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\devandroid\\Downloads\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj",
+  "projectFilePath": "C:\\Users\\devandroid\\TurnosPeluqueria-EJ06\\TurnosPeluqueria-EJ06.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\devandroid\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\devandroid\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
