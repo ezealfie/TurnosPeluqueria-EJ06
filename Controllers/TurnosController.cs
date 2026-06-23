@@ -8,7 +8,8 @@ public class TurnosController : Controller
   
     public IActionResult Index()
     {
-        ViewBag.turnos = BD.ObtenerTurnos();
+        BD MiBase = new BD();
+        ViewBag.turnos = MiBase.ObtenerTurnos();
 
         return View();
     }
@@ -26,21 +27,24 @@ public class TurnosController : Controller
         if (string.IsNullOrWhiteSpace(turno.Estado))
             turno.Estado = "Pendiente";
 
-        BD.AgregarTurno(turno);
+        BD MiBase = new BD();
+        MiBase.AgregarTurno(turno);
         return RedirectToAction("Index");
     }
 
     [HttpPost]
     public IActionResult Atender(int id)
     {
-        BD.CambiarEstado(id, "Atendido");
+        BD MiBase = new BD();
+        MiBase.CambiarEstado(id, "Atendido");
         return RedirectToAction("Index");
     }
 
     [HttpPost]
     public IActionResult Cancelar(int id)
     {
-        BD.CambiarEstado(id, "Cancelado");
+        BD MiBase = new BD();
+        MiBase.CambiarEstado(id, "Cancelado");
         return RedirectToAction("Index");
     }
 }

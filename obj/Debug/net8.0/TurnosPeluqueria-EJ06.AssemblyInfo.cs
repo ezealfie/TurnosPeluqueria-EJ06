@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TurnosPeluqueria-EJ06")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24fa60bbe45911b6b5fb864ef80ad5a0832761ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6eef10cb63a6ff90472b27191d175420962958e")]
 [assembly: System.Reflection.AssemblyProductAttribute("TurnosPeluqueria-EJ06")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TurnosPeluqueria-EJ06")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
