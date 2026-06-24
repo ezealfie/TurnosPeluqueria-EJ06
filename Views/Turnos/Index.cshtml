@@ -25,26 +25,36 @@ else
             </tr>
         </thead>
         <tbody>
-        @foreach (var t in turnos)
-        {
-            <tr>
-                <td>@t.FechaHora</td>
-                <td>@t.NombreCliente</td>
-                <td>@t.Servicio</td>
-                <td>@t.Estado</td>
-                <td>
-                    <form action='@Url.Action("Atender", "Turnos")' method="post" style="display:inline;">
-                        <input type="hidden" name="id" value="@t.Id" />
-                        <button type="submit">Atender</button>
-                    </form>
+            @foreach (var t in turnos)
+            {
+                <tr>
+                    <td>@t.FechaHora</td>
+                    <td>@t.NombreCliente</td>
+                    <td>@t.Servicio</td>
+                    <td>@t.Estado</td>
+                    <td>
+                        <form id="atender_@t.Id" action='@Url.Action("Atender", "Turnos")' method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@t.Id" />
+                            <button type="submit">Atender</button>
+                        </form>
 
-                    <form action='@Url.Action("Cancelar", "Turnos")' method="post" style="display:inline;">
-                        <input type="hidden" name="id" value="@t.Id" />
-                        <button type="submit">Cancelar</button>
-                    </form>
-                </td>
-            </tr>
-        }
+                        <form id="cancelar_@t.Id" action='@Url.Action("Cancelar", "Turnos")' method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@t.Id" />
+                            <button type="submit">Cancelar</button>
+                        </form>
+                        <button id="editar_@t.Id" onclick="CambiarFecha(@t.Id)" style="display:inline">Editar Fecha</button>
+
+                        <form id="fecha_@t.Id" action='@Url.Action("CambiarFecha", "Turnos")' method="post" style="display:none;">
+                            <input type="hidden" name="id" value="@t.Id" />
+                            <input type="datetime-local" name="FechaHora" />
+                            <button type="submit" onclick="VolverAInicio(@t.Id)">Confirmar</button>
+
+
+                        
+                        </form>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 }

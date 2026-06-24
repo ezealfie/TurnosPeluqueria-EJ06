@@ -47,4 +47,12 @@ public class TurnosController : Controller
         MiBase.CambiarEstado(id, "Cancelado");
         return RedirectToAction("Index");
     }
+  [HttpPost]
+    public IActionResult CambiarFecha(int id, DateTime FechaHora)
+    {
+        BD MiBase = new BD();
+        MiBase.CambiarFecha(id, FechaHora);
+        return RedirectToAction("Index");
+    }
+    
 }

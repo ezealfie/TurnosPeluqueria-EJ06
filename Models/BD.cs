@@ -51,5 +51,16 @@ public class BD
 
 
     }
+    public void CambiarFecha(int id, DateTime nuevaFecha)
+    {
+        using (SqlConnection connection = new SqlConnection(_connectionString))
+        {
+            string query = "UPDATE Turnos SET FechaHora = @pfecha WHERE id = @pid";
+             connection.Execute(query, new{pfecha = nuevaFecha, pid = id});
+        }
+     
+
+
+    }
     
 }
